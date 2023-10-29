@@ -3,6 +3,15 @@ package com.example.java;
  class Car {
     int gas;
 
+    String company = "현대자동차";
+    String model ="그랜저";
+
+    String color = "검정";
+
+    int maxSpeed = 350;
+
+    int speed;
+
     void setGas(int gas){
         this.gas = gas;
     }
@@ -43,5 +52,14 @@ class CarExample {
         }
 
         System.out.println("gas를 주입하세요");
+
+        System.out.println("제작회사" + myCar.company);
+        System.out.println("제작회사" + myCar.model);
+        System.out.println("제작회사" + myCar.color);
+        System.out.println("제작회사" + myCar.maxSpeed);
+        System.out.println("제작회사" + myCar.speed);
+
+        myCar.speed = 60;
+        System.out.println("수정된속도" + myCar.speed);
     }
 }
